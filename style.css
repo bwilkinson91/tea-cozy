@@ -1,63 +1,89 @@
-body {
+html {
   background-color: black;
+  box-sizing: border-box;
   color: seashell;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
   font-size: 22px;
-  margin: 0px;
   opacity: 0.9;
+  text-align: center;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
 }
 
 header {
+  background-color: black;
   border-bottom: 1px solid seashell;
   display: flex;
   height: 69px;
   justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
 }
 
-header nav {
-  align-items: center;
-  display: flex;
-}
-
-header nav > * {
-  text-decoration: underline;
-  margin: 0px 10px;
-}
-
-.img-tea-cozy-logo {
+header img {
   height: 50px;
   margin: 10px 10px;
 }
 
-.mission {
-  margin-bottom: 50px;
-  position: relative;
+header nav ul > * {
+  display: inline-block;
+  margin: 0px 10px;
+  list-style: none;
 }
 
-.img-mission-background {
+header nav ul li a {
+  color: seashell;
+}
+
+#mission {
+  align-content: center;
+  background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   height: 700px;
-}
-
-.img-mission-background img {
+  margin-top: 70px;
+  opacity: 0.9;
   width: 1200px;
 }
 
-.mission-statement-text {
+#mission div {
   background-color: black;
-  left: 50%;
-  position: absolute;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  width: 1200px;
+  margin: auto 0;
 }
 
-.mission-statement-text > * {
-  margin: 10px;
+#mission div > * {
+  margin: 15px 0;
 }
 
-.mission-statement-text h2 {
-  margin-bottom: 20px;
+#tea-of-the-month {
+  margin-top: 40px;
+  width: 1000px;
+}
+
+#tea-of-the-month h2,
+#tea-of-the-month h4 {
+  margin: 15px 0px;
+}
+
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#products figure {
+  margin: 15px 15px;
+}
+
+#products figure img {
+  height: 200px;
+  width: 300px;
+  opacity: 0.9;
 }
