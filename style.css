@@ -15,6 +15,8 @@ body {
   margin: 0px;
 }
 
+/* Header */
+
 header {
   background-color: black;
   border-bottom: 1px solid seashell;
@@ -38,9 +40,11 @@ header nav ul > * {
   list-style: none;
 }
 
-header nav ul li a {
+header a {
   color: seashell;
 }
+
+/* Mission */
 
 #mission {
   align-content: center;
@@ -62,14 +66,15 @@ header nav ul li a {
   margin: 15px 0;
 }
 
+/* Tea of the Month */
+
 #tea-of-the-month {
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin: 40px 0px 10px 0px;
   width: 1000px;
 }
 
-#tea-of-the-month h2,
-#tea-of-the-month h4 {
+#tea-of-the-month > h2,
+#tea-of-the-month > h4 {
   margin: 15px 0px;
 }
 
@@ -97,6 +102,8 @@ header nav ul li a {
   margin: 0px;
 }
 
+/* Locations */
+
 #locations {
   align-items: center;
   background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg);
@@ -104,8 +111,7 @@ header nav ul li a {
   flex-direction: column;
   justify-content: center;
   height: 560px;
-  margin: 30px 0px;
-  margin-bottom: 0px;
+  margin: 30px 0px 0px 0px;
   opacity: 0.7;
   width: 1200px;
 }
@@ -121,7 +127,6 @@ header nav ul li a {
 
 .locations {
   background-color: black;
-  display: block;
   margin: 15px 20px;
   opacity: 1;
   width: 300px;
@@ -130,6 +135,8 @@ header nav ul li a {
 .locations h4 {
   font-weight: normal;
 }
+
+/* Footer */
 
 footer {
   display: flex;
